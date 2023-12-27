@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #484747;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.car img {
+    max-width: 80%;
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    margin: 10px 10px 10px 10px; /* Margen: arriba, derecha, abajo, izquierda */
+    border-radius: 8px;
+}
+
+/* Estilos base para las tarjetas */
+.car {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea los elementos de la tarjeta */
+    width: 350px;
+    height: 450px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Media query para dispositivos con un ancho máximo de 768px (puedes ajustar según tus necesidades) */
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Cambia la dirección a columna en dispositivos móviles */
+    }
+    
+    .car {
+        width: 100%; /* Ocupa el 100% del ancho disponible en dispositivos móviles */
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 10px; /* Ajusta el margen interno de las tarjetas según sea necesario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#image-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#slideshow {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Ajusta la velocidad de la transición */
+    max-height: 400px;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen para que cubra completamente el contenedor */
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px; /* Ajusta el margen del gran card según sea necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    overflow: hidden; /* Para que el contenedor abrace a sus elementos internos */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #484747;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em; /* Ajusta el espaciado interno de la barra inferior */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Resto del código sigue igual */
+
+nav {
+    background-color: #484747;
+    padding: 0.5em 1em; /* Ajusta el espaciado interno de la barra de navegación */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 120px; /* Ajusta el ancho del logo según sea necesario */
+    margin-right: 3px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    background-color: #000; /* Color negro */
+    color: #fff; /* Texto en blanco para contrastar */
+    border: none;
+    padding: 10px 15px; /* Ajusta el padding según sea necesario */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #333; /* Cambia el color al hacer hover */
+}
+.contact-info {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.contact-card {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.quienes-somos-container {
+    max-width: 800px; /* Ajusta el ancho según sea necesario */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quienes-logo img {
+    max-width: 200px; /* Ajusta el ancho del logo según sea necesario */
+    margin: 20px auto; /* Centra el logo horizontalmente y agrega un margen superior */
+    display: block; /* Asegura que el logo esté en una línea separada */
+}
+
+.image-card {
+    max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+nav a:hover,
+nav a:active {
+    color: #ffcc00; /* Cambia el color al pasar el mouse o al hacer clic */
+}
+
